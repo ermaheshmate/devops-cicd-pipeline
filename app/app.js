@@ -1,1 +1,1 @@
-console.log("DevOps Dashboard Loaded Successfully");
+console.log("DevOps Dashboard Started");
