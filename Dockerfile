@@ -1,6 +1,10 @@
-FROM nginx:latest
+FROM jenkins/jenkins:lts
 
-COPY app/ /usr/share/nginx/html/
+USER root
 
-EXPOSE 80
+RUN apt-get update && \
+    apt-get install -y docker.io git && \
+    apt-get clean
+
+USER jenkins
 
