@@ -366,3 +366,77 @@ footer p{
     font-weight:bold;
 
 }
+
+/* Theme Button */
+
+.theme-btn{
+
+    background:white;
+    color:#1565c0;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+.theme-btn:hover{
+
+    background:#4fc3f7;
+    color:white;
+
+}
+
+/* Dark Mode */
+
+.dark{
+
+    background:#111827;
+    color:white;
+
+}
+
+.dark .card,
+.dark .build-card,
+.dark table{
+
+    background:#1f2937;
+    color:white;
+
+}
+
+.dark td{
+
+    border:1px solid #444;
+
+}
+
+.dark .step{
+
+    background:#2563eb;
+
+}
+
+.dark footer{
+
+    background:black;
+
+}
+
+.dark .hero{
+
+    background:#0f4c81;
+
+}
+
+.dark .navbar{
+
+    background:#000;
+
+}
