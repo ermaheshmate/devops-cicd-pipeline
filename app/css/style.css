@@ -468,3 +468,81 @@ footer p{
     box-shadow:0 0 20px rgba(0,200,83,.6);
 
 }
+
+/* DevOps Environment */
+
+.environment{
+
+    width:90%;
+
+    margin:60px auto;
+
+}
+
+.environment h2{
+
+    text-align:center;
+
+    color:#1565c0;
+
+    margin-bottom:30px;
+
+}
+
+.env-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.env-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.env-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.env-card h3{
+
+    color:#1565c0;
+
+    margin-bottom:12px;
+
+}
+
+.success{
+
+    color:#00a651;
+
+    font-weight:bold;
+
+}
+
+/* Dark Mode Support */
+
+.dark .env-card{
+
+    background:#1f2937;
+
+    color:white;
+
+}
