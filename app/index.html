@@ -33,192 +33,238 @@
 
     </nav>
 
-    <!-- Hero -->
-
     <section class="hero">
 
-        <h1>DEVOPS AUTOMATION DASHBOARD</h1>
+    <h1>🚀 DevOps CI/CD Automation Dashboard</h1>
 
-        <p>
+    <p>
 
-            Automated CI/CD Pipeline using
-            Git • GitHub • Jenkins • Docker • Linux
+        Automated CI/CD Pipeline using Git, GitHub, Jenkins,
+        Docker, Nginx and Linux
 
-        </p>
+    </p>
 
-        <button>View Pipeline</button>
+    <a href="#pipeline" class="btn">
 
-    </section>
+        View Pipeline
 
+    </a>
+
+</section>
+   
     <!-- Status Cards -->
 
     <section class="cards">
 
-        <div class="card">
+<div class="card">
 
-            <h2>Git</h2>
+<h2>Git</h2>
 
-            <p>Repository Initialized</p>
+<p>Repository Initialized</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h2>GitHub</h2>
+<h2>GitHub</h2>
 
-            <p>Repository Connected</p>
+<p>Repository Connected</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h2>Jenkins</h2>
+<h2>Jenkins</h2>
 
-            <p>Pipeline Success</p>
+<p>Pipeline Success</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h2>Docker</h2>
+<h2>Docker</h2>
 
-            <p>Image Built</p>
+<p>Image Built</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h2>Container</h2>
+<h2>Container</h2>
 
-            <p>Running Successfully</p>
+<p>Running Successfully</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h2>Nginx</h2>
+<h2>Nginx</h2>
 
-            <p>Serving Website</p>
+<p>Serving Website</p>
 
-        </div>
+</div>
 
-    </section>
+<div class="card">
 
+<h2>Linux</h2>
+
+<p>Ubuntu WSL</p>
+
+</div>
+
+<div class="card">
+
+<h2>Status</h2>
+
+<p>Deployment Successful</p>
+
+</div>
+
+</section>
+
+.card{
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+}
     <!-- Pipeline -->
 
-    <section class="pipeline">
+            <section id="pipeline" class="pipeline">
 
-        <h2>CI/CD Pipeline Flow</h2>
+           <h2>CI/CD Pipeline Flow</h2>
 
-        <div class="flow">
+ <div class="flow">
 
-            <div class="step">Git</div>
+ <div class="step">Git</div>
 
-            <div class="arrow">→</div>
+<div class="arrow">➜</div>
 
-            <div class="step">GitHub</div>
+<div class="step">GitHub</div>
 
-            <div class="arrow">→</div>
+<div class="arrow">➜</div>
 
-            <div class="step">Jenkins</div>
+<div class="step">Jenkins</div>
 
-            <div class="arrow">→</div>
+<div class="arrow">➜</div>
 
-            <div class="step">Docker Build</div>
+<div class="step">Docker Build</div>
 
-            <div class="arrow">→</div>
+<div class="arrow">➜</div>
 
-            <div class="step">Deploy</div>
+<div class="step">Deploy</div>
 
-            <div class="arrow">→</div>
+<div class="arrow">➜</div>
 
-            <div class="step">Running</div>
+<div class="step">Running</div>
 
-        </div>
+</div>
 
-    </section>
-
+</section>
+           
     <!-- Project Information -->
 
     <section class="info">
 
-        <h2>Project Information</h2>
+<h2>Project Information</h2>
 
-        <table>
+<table>
 
-            <tr>
+<tr>
 
-                <td>Project</td>
+<td>Project</td>
 
-                <td>DevOps CI/CD Pipeline</td>
+<td>DevOps CI/CD Pipeline</td>
 
-            </tr>
+</tr>
 
-            <tr>
+<tr>
 
-                <td>Repository</td>
+<td>Repository</td>
 
-                <td>GitHub</td>
+<td>GitHub</td>
 
-            </tr>
+</tr>
 
-            <tr>
+<tr>
 
-                <td>Container</td>
+<td>Branch</td>
 
-                <td>devops-web</td>
+<td>main</td>
 
-            </tr>
+</tr>
 
-            <tr>
+<tr>
 
-                <td>Docker Image</td>
+<td>Docker Image</td>
 
-                <td>devops-cicd-app</td>
+<td>devops-cicd-app</td>
 
-            </tr>
+</tr>
 
-            <tr>
+<tr>
 
-                <td>Port</td>
+<td>Container</td>
 
-                <td>8081</td>
+<td>devops-web</td>
 
-            </tr>
+</tr>
 
-            <tr>
+<tr>
 
-                <td>Status</td>
+<td>Port</td>
 
-                <td>Running</td>
+<td>8081</td>
 
-            </tr>
+</tr>
 
-            <tr>
+<tr>
 
-                <td>Developer</td>
+<td>Status</td>
 
-                <td>Mahesh Mate</td>
+<td>Running</td>
 
-            </tr>
+</tr>
 
-        </table>
+<tr>
 
-    </section>
+<td>Developer</td>
 
+<td>Mahesh Mate</td>
+
+</tr>
+
+</table>
+
+</section>
+              
+              
     <!-- Footer -->
 
     <footer>
 
-        <p><strong>Developed by Mahesh Mate</strong></p>
+<p>
 
-        <p>DevOps CI/CD Pipeline Project</p>
+Developed by
 
-    </footer>
+<strong>Mahesh Mate</strong>
 
-    <script src="js/app.js"></script>
+</p>
+
+<p>
+
+DevOps CI/CD Pipeline Project
+
+</p>
+
+</footer>
 
 </body>
-
 </html>
-

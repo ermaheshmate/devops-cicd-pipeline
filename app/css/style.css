@@ -290,3 +290,34 @@ footer p{
 
 }
 
+.btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:white;
+
+    color:#1565c0;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#1565c0;
+
+    color:white;
+
+    border:2px solid white;
+
+}
