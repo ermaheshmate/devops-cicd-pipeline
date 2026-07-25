@@ -35,7 +35,65 @@ btn.addEventListener("click", function(){
     else{
 
         btn.innerHTML="🌙 Dark Mode";
+// Animated Pipeline
+
+const steps = document.querySelectorAll(".step");
+
+let current = 0;
+
+function animatePipeline(){
+
+    steps.forEach(step => {
+
+        step.classList.remove("active");
+
+    });
+
+    steps[current].classList.add("active");
+
+    current++;
+
+    if(current >= steps.length){
+
+        current = 0;
 
     }
 
+}
+
+setInterval(animatePipeline,1000);
+
+animatePipeline();
+    }
+
 });
+
+// Animated Pipeline
+
+const steps = document.querySelectorAll(".step");
+
+let current = 0;
+
+function animatePipeline(){
+
+    steps.forEach(step => {
+
+        step.classList.remove("active");
+
+    });
+
+    steps[current].classList.add("active");
+
+    current++;
+
+    if(current >= steps.length){
+
+        current = 0;
+
+    }
+
+}
+
+setInterval(animatePipeline,1000);
+
+animatePipeline();

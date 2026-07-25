@@ -440,3 +440,31 @@ footer p{
     background:#000;
 
 }
+
+/* Pipeline Animation */
+
+.step{
+
+    background:#1565c0;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:0.4s;
+
+}
+
+.step.active{
+
+    background:#00c853;
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 20px rgba(0,200,83,.6);
+
+}
