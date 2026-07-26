@@ -191,22 +191,16 @@
 }
 
 .build-card{
-
-    background:white;
-
+    background:#ffffff;
+    color:#222;
     text-align:center;
-
     padding:25px;
-
     border-radius:12px;
-
     box-shadow:0 5px 20px rgba(0,0,0,.15);
-
     transition:.3s;
-
 }
-
-.build-card:hover{
+  
+ .build-card:hover{
 
     transform:translateY(-8px);
 
@@ -234,34 +228,14 @@
    STATUS CARDS
 ===================================== */
 
-.cards{
-
-    width:90%;
-
-    margin:50px auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
-    gap:25px;
-
-}
-
 .card{
-
-    background:white;
-
-    padding:30px;
-
+    background:#fff;
+    color:#222;
+    padding:35px;
     border-radius:12px;
-
     text-align:center;
-
     box-shadow:0 5px 20px rgba(0,0,0,.15);
-
     transition:.4s;
-
 }
 
 .card:hover{
@@ -427,30 +401,20 @@
 ===================================== */
 
 table{
-
     width:100%;
-
     border-collapse:collapse;
-
-    background:white;
-
+    background:#fff;
+    color:#222;
     border-radius:12px;
-
     overflow:hidden;
-
     box-shadow:0 5px 20px rgba(0,0,0,.12);
-
 }
+  
 
 table td{
-
-    padding:18px;
-
-    border:1px solid #ddd;
-
     color:#222;
-
 }
+   
 
 table tr:nth-child(even){
 
@@ -499,19 +463,13 @@ table tr:hover{
 }
 
 .env-card{
-
-    background:white;
-
+    background:#ffffff;
+    color:#222;
     padding:25px;
-
     border-radius:12px;
-
     text-align:center;
-
     box-shadow:0 5px 20px rgba(0,0,0,.15);
-
     transition:.35s;
-
 }
 
 .env-card:hover{
@@ -571,94 +529,55 @@ footer p{
 ===================================== */
 
 body.dark{
-
     background:#121212;
-
     color:white;
-
 }
 
+/* Navbar */
 body.dark .navbar{
-
     background:#000;
-
 }
 
+/* Hero */
 body.dark .hero{
-
-    background:#0d47a1;
-
+    background:#1b4f9c;
 }
 
+/* Cards */
 body.dark .card,
-
 body.dark .build-card,
-
 body.dark .env-card,
-
 body.dark table{
-
     background:#1e1e1e;
-
-    color:white;
-
+    color:#fff;
 }
 
-body.dark .card p,
-
-body.dark .env-card p,
-
-body.dark .build-card p,
-
+/* Table cells */
 body.dark table td{
-
-    color:white;
-
+    color:#fff;
+    border-color:#444;
 }
 
-body.dark table tr:nth-child(even){
-
-    background:#2b2b2b;
-
-}
-
-body.dark table tr:hover{
-
-    background:#3a3a3a;
-
-}
-
-body.dark footer{
-
-    background:#000;
-
-}
-
-body.dark .btn{
-
+/* Pipeline */
+body.dark .step{
     background:#2196f3;
+}
 
-    color:white;
+/* Footer */
+body.dark footer{
+    background:#000;
+}
 
+/* Buttons */
+body.dark .btn{
+    background:#2196f3;
+    color:#fff;
 }
 
 body.dark .btn:hover{
-
-    background:white;
-
-    color:#1565c0;
-
+    background:#1565c0;
 }
-
-body.dark .theme-btn{
-
-    background:#2196f3;
-
-    color:white;
-
-}
-
-
+ 
 
 /* =====================================
    RESPONSIVE DESIGN
