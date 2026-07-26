@@ -546,3 +546,19 @@ footer p{
     color:white;
 
 }
+
+/* Hero Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+}
