@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DevOps Automation Dashboard</title>
+    <title>DevOps CI/CD Automation Dashboard</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -14,80 +14,111 @@
 
 <body>
 
-    <!-- Navbar -->
+<!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar">
+<nav class="navbar">
 
-        <div class="logo">
-            DevOps Dashboard
-        </div>
+    <div class="logo">
+        🚀 DevOps Dashboard
+    </div>
 
-        <ul>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#environment">System</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#pipeline">Pipeline</a></li>
-            <li><a href="#">System</a></li>
-            <li><a href="#">About</a></li>
+    <button id="themeBtn" class="theme-btn">
 
-        </ul>
-
-          <button id="themeBtn" class="theme-btn">
         🌙 Dark Mode
 
     </button>
-    </nav>
 
-    <section class="hero">
+</nav>
 
-    <h1>🚀 DevOps CI/CD Automation Dashboard</h1>
+
+<!-- ================= HERO ================= -->
+
+<section id="hero"  class="hero">
+<section id="environment" class="environment">
+
+    <h1>DevOps CI/CD Automation Dashboard</h1>
 
     <p>
 
-        Automated CI/CD Pipeline using Git, GitHub, Jenkins,
-        Docker, Nginx and Linux
+        Automated Deployment Pipeline using
+
+        Git • GitHub • Jenkins • Docker • Nginx • Linux
 
     </p>
 
-<div class="hero-buttons">
+    <div class="hero-buttons">
 
-    <a href="#pipeline" class="btn">
-        View Pipeline
-    </a>
+        <a href="#pipeline" class="btn">
 
-    <a href="https://github.com/ermaheshmate/devops-cicd-pipeline"
-       target="_blank"
-       class="btn">
-        View GitHub Repository
-    </a>
-</div>
+            View Pipeline
+
+        </a>
+
+        <a href="https://github.com/ermaheshmate/devops-cicd-pipeline"
+
+            target="_blank"
+
+            class="btn">
+
+            View GitHub Repository
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BUILD INFORMATION ================= -->
 
 <section class="build-info">
 
     <div class="build-card">
+
         <h3>Build Number</h3>
+
         <p id="buildNumber">#001</p>
+
     </div>
 
     <div class="build-card">
+
         <h3>Version</h3>
+
         <p>v1.0.0</p>
+
     </div>
 
     <div class="build-card">
+
         <h3>Build Date</h3>
+
         <p id="buildDate"></p>
+
     </div>
 
     <div class="build-card">
+
         <h3>Current Time</h3>
+
         <p id="clock"></p>
+
     </div>
 
 </section>
-   
-    <!-- Status Cards -->
 
-    <section class="cards">
+
+
+<!-- ================= STATUS CARDS ================= -->
+
+<section class="cards">
 
 <div class="card">
 
@@ -109,7 +140,7 @@
 
 <h2>Jenkins</h2>
 
-<p>Pipeline Success</p>
+<p>Pipeline Successful</p>
 
 </div>
 
@@ -117,7 +148,7 @@
 
 <h2>Docker</h2>
 
-<p>Image Built</p>
+<p>Image Built Successfully</p>
 
 </div>
 
@@ -141,7 +172,7 @@
 
 <h2>Linux</h2>
 
-<p>Ubuntu WSL</p>
+<p>Ubuntu WSL2</p>
 
 </div>
 
@@ -155,43 +186,51 @@
 
 </section>
 
-    <!-- Pipeline -->
 
-            <section id="pipeline" class="pipeline">
 
-    <h2>CI/CD Pipeline Flow</h2>
+<!-- ================= PIPELINE ================= -->
 
-    <div class="flow">
+<section id="pipeline" class="pipeline">
 
-        <div class="step">Git</div>
+<h2>CI/CD Pipeline Flow</h2>
 
-        <div class="arrow">➜</div>
+<div class="flow">
 
-        <div class="step">GitHub</div>
+<div class="step">Git</div>
 
-        <div class="arrow">➜</div>
+<div class="arrow">➜</div>
 
-        <div class="step">Jenkins</div>
+<div class="step">GitHub</div>
 
-        <div class="arrow">➜</div>
+<div class="arrow">➜</div>
 
-        <div class="step">Docker Build</div>
+<div class="step">Jenkins</div>
 
-        <div class="arrow">➜</div>
+<div class="arrow">➜</div>
 
-        <div class="step">Deploy</div>
+<div class="step">Docker Build</div>
 
-        <div class="arrow">➜</div>
+<div class="arrow">➜</div>
 
-        <div class="step">Running</div>
+<div class="step">Deploy</div>
 
-    </div>
+<div class="arrow">➜</div>
+
+<div class="step running">
+
+Running
+
+</div>
+
+</div>
 
 </section>
-           
-    <!-- Project Information -->
 
-    <section class="info">
+
+
+<!-- ================= PROJECT INFORMATION ================= -->
+
+<section id="info" class="info">
 
 <h2>Project Information</h2>
 
@@ -201,7 +240,7 @@
 
 <td>Project</td>
 
-<td>DevOps CI/CD Pipeline</td>
+<td>DevOps CI/CD Pipeline Dashboard</td>
 
 </tr>
 
@@ -266,69 +305,108 @@
 </section>
 
 
-<section class="environment">
 
-    <h2>DevOps Environment</h2>
+<!-- ================= ENVIRONMENT ================= -->
 
-    <div class="env-grid">
+<section id="environment" class="environment">
 
-        <div class="env-card">
-            <h3>Operating System</h3>
-            <p>Ubuntu WSL 2</p>
-        </div>
+<h2>DevOps Environment</h2>
 
-        <div class="env-card">
-            <h3>Web Server</h3>
-            <p>Nginx</p>
-        </div>
+<div class="env-grid">
 
-        <div class="env-card">
-            <h3>Container</h3>
-            <p>devops-web</p>
-        </div>
+<div class="env-card">
 
-        <div class="env-card">
-            <h3>Docker Image</h3>
-            <p>devops-cicd-app:latest</p>
-        </div>
+<h3>Operating System</h3>
 
-        <div class="env-card">
-            <h3>Branch</h3>
-            <p>main</p>
-        </div>
+<p>Ubuntu WSL2</p>
 
-        <div class="env-card">
-            <h3>Deployment</h3>
-            <p class="success">🟢 Successful</p>
-        </div>
+</div>
 
-        <div class="env-card">
-            <h3>CI/CD Tool</h3>
-            <p>Jenkins</p>
-        </div>
+<div class="env-card">
 
-        <div class="env-card">
-            <h3>Repository</h3>
-            <p>GitHub</p>
-        </div>
+<h3>Web Server</h3>
 
-    </div>
+<p>Nginx</p>
 
-</section>              
-              
-    <!-- Footer -->
+</div>
 
-      <footer>
+<div class="env-card">
+
+<h3>Container</h3>
+
+<p>devops-web</p>
+
+</div>
+
+<div class="env-card">
+
+<h3>Docker Image</h3>
+
+<p>devops-cicd-app:latest</p>
+
+</div>
+
+<div class="env-card">
+
+<h3>Branch</h3>
+
+<p>main</p>
+
+</div>
+
+<div class="env-card">
+
+<h3>Deployment</h3>
+
+<p class="success">
+
+🟢 Successful
+
+</p>
+
+</div>
+
+<div class="env-card">
+
+<h3>CI/CD Tool</h3>
+
+<p>Jenkins</p>
+
+</div>
+
+<div class="env-card">
+
+<h3>Repository</h3>
+
+<p>GitHub</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+ 
+<footer id="about">
+
+<footer>
 
 <p>
 
-Developed by <strong>Mahesh Mate</strong>
+Developed by
+
+<strong>Mahesh Mate</strong>
 
 </p>
 
 <p>
 
-DevOps CI/CD Pipeline • Version 1.0
+DevOps CI/CD Pipeline Dashboard
+
+Version 1.0
 
 </p>
 
@@ -339,7 +417,11 @@ Git • GitHub • Jenkins • Docker • Nginx • Linux
 </p>
 
 </footer>
-   
+
+
+
 <script src="js/app.js"></script>
+
 </body>
+
 </html>

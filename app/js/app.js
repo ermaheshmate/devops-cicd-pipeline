@@ -7,7 +7,7 @@ const themeBtn = document.getElementById("themeBtn");
 themeBtn.onclick = () => {
 
     document.body.classList.toggle("dark");
-
+cl
     if(document.body.classList.contains("dark")){
 
         themeBtn.innerHTML="☀️ Light Mode";
@@ -49,20 +49,29 @@ today.toDateString();
 
 // Smooth Scroll
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+// Smooth Scroll
 
-anchor.addEventListener("click",function(e){
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-e.preventDefault();
+    anchor.addEventListener("click", function(e) {
 
-document.querySelector(this.getAttribute("href"))
+        const target = this.getAttribute("href");
 
-.scrollIntoView({
+        // Ignore empty links like href="#"
+        if (target === "#") {
+            return;
+        }
 
-behavior:"smooth"
+        e.preventDefault();
 
-});
+        const section = document.querySelector(target);
 
-});
+        if (section) {
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+    });
 
 });
