@@ -1,16 +1,35 @@
 console.log("DevOps Dashboard Started");
 
+// Dark Mode
+
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+
+        themeBtn.innerHTML="☀️ Light Mode";
+
+    }else{
+
+        themeBtn.innerHTML="🌙 Dark Mode";
+
+    }
+
+};
+
+
 // Live Clock
 
-function updateClock() {
+function updateClock(){
 
-    const now = new Date();
+    const now=new Date();
 
-    document.getElementById("clock").innerHTML =
-        now.toLocaleTimeString();
+    document.getElementById("clock").innerHTML=
 
-    document.getElementById("buildDate").innerHTML =
-        now.toLocaleDateString();
+    now.toLocaleTimeString();
 
 }
 
@@ -18,82 +37,32 @@ setInterval(updateClock,1000);
 
 updateClock();
 
-// Dark Mode
 
-const btn = document.getElementById("themeBtn");
+// Build Date
 
-btn.addEventListener("click", function(){
+const today=new Date();
 
-    document.body.classList.toggle("dark");
+document.getElementById("buildDate").innerHTML=
 
-    if(document.body.classList.contains("dark")){
+today.toDateString();
 
-        btn.innerHTML="☀️ Light Mode";
 
-    }
+// Smooth Scroll
 
-    else{
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
-        btn.innerHTML="🌙 Dark Mode";
-// Animated Pipeline
+anchor.addEventListener("click",function(e){
 
-const steps = document.querySelectorAll(".step");
+e.preventDefault();
 
-let current = 0;
+document.querySelector(this.getAttribute("href"))
 
-function animatePipeline(){
+.scrollIntoView({
 
-    steps.forEach(step => {
-
-        step.classList.remove("active");
-
-    });
-
-    steps[current].classList.add("active");
-
-    current++;
-
-    if(current >= steps.length){
-
-        current = 0;
-
-    }
-
-}
-
-setInterval(animatePipeline,1000);
-
-animatePipeline();
-    }
+behavior:"smooth"
 
 });
 
-// Animated Pipeline
+});
 
-const steps = document.querySelectorAll(".step");
-
-let current = 0;
-
-function animatePipeline(){
-
-    steps.forEach(step => {
-
-        step.classList.remove("active");
-
-    });
-
-    steps[current].classList.add("active");
-
-    current++;
-
-    if(current >= steps.length){
-
-        current = 0;
-
-    }
-
-}
-
-setInterval(animatePipeline,1000);
-
-animatePipeline();
+});
