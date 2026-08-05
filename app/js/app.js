@@ -6,12 +6,14 @@ function updateTime(){
 
     const now = new Date();
 
+    // Live System section
     document.getElementById("time").innerHTML =
         now.toLocaleTimeString();
 
     document.getElementById("date").innerHTML =
         now.toDateString();
 
+    // Build Information section
     document.getElementById("clock").innerHTML =
         now.toLocaleTimeString();
 
@@ -19,7 +21,6 @@ function updateTime(){
         now.toLocaleDateString();
 
 }
-
 setInterval(updateTime,1000);
 
 updateTime();
