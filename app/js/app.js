@@ -1,77 +1,59 @@
 console.log("DevOps Dashboard Started");
 
-// Dark Mode
+// Live Time
 
-const themeBtn = document.getElementById("themeBtn");
+function updateTime(){
 
-themeBtn.onclick = () => {
+    const now = new Date();
 
-    document.body.classList.toggle("dark");
-cl
-    if(document.body.classList.contains("dark")){
+    document.getElementById("time").innerHTML =
+        now.toLocaleTimeString();
 
-        themeBtn.innerHTML="☀️ Light Mode";
+    document.getElementById("date").innerHTML =
+        now.toDateString();
 
-    }else{
+    document.getElementById("clock").innerHTML =
+        now.toLocaleTimeString();
 
-        themeBtn.innerHTML="🌙 Dark Mode";
-
-    }
-
-};
-
-
-// Live Clock
-
-function updateClock(){
-
-    const now=new Date();
-
-    document.getElementById("clock").innerHTML=
-
-    now.toLocaleTimeString();
+    document.getElementById("buildDate").innerHTML =
+        now.toLocaleDateString();
 
 }
 
-setInterval(updateClock,1000);
+setInterval(updateTime,1000);
 
-updateClock();
-
-
-// Build Date
-
-const today=new Date();
-
-document.getElementById("buildDate").innerHTML=
-
-today.toDateString();
+updateTime();
 
 
-// Smooth Scroll
+// Browser
 
-// Smooth Scroll
+document.getElementById("browser").innerHTML =
+navigator.userAgent;
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-    anchor.addEventListener("click", function(e) {
+// Operating System
 
-        const target = this.getAttribute("href");
+document.getElementById("os").innerHTML =
+navigator.platform;
 
-        // Ignore empty links like href="#"
-        if (target === "#") {
-            return;
-        }
 
-        e.preventDefault();
+// Screen Resolution
 
-        const section = document.querySelector(target);
+document.getElementById("screen").innerHTML =
+screen.width + " x " + screen.height;
 
-        if (section) {
-            section.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
 
-    });
+// Online Status
 
-});
+function updateStatus(){
+
+    document.getElementById("status").innerHTML =
+    navigator.onLine ? "🟢 Online" : "🔴 Offline";
+
+}
+
+updateStatus();
+
+window.addEventListener("online",updateStatus);
+
+window.addEventListener("offline",updateStatus);
