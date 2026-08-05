@@ -1004,3 +1004,80 @@ padding:35px 20px;
 }
 
 }
+
+
+/* ==========================
+        ANIMATIONS
+========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Hero Animation */
+
+.hero{
+    animation:fadeUp 1s ease;
+}
+
+/* Cards Animation */
+
+.card{
+    transition:0.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* Navbar Hover */
+
+.nav-links a{
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#00e5ff;
+
+}
+
+/* Button Animation */
+
+button{
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Fade Animation */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
