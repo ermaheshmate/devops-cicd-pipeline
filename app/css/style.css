@@ -222,7 +222,241 @@
 
     font-weight:bold;
 
+/* ==========================
+      RESPONSIVE DESIGN
+========================== */
+
+@media screen and (max-width:1200px){
+
+.stats,
+.environment,
+.projects,
+.skills{
+    grid-template-columns:repeat(2,1fr);
 }
+
+}
+
+
+@media screen and (max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+padding:15px;
+
+}
+
+.nav-links{
+
+margin-top:15px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.nav-links li{
+
+margin:10px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.stats,
+.environment,
+.projects,
+.skills{
+
+grid-template-columns:1fr;
+
+}
+
+.pipeline-flow{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.pipeline-arrow{
+
+transform:rotate(90deg);
+
+}
+
+.buttons{
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+}
+
+
+@media screen and (max-width:500px){
+
+.hero{
+
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.section-title{
+
+font-size:32px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+footer{
+
+padding:35px 20px;
+
+}
+
+}/* ==========================
+      RESPONSIVE DESIGN
+========================== */
+
+@media screen and (max-width:1200px){
+
+.stats,
+.environment,
+.projects,
+.skills{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media screen and (max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+padding:15px;
+
+}
+
+.nav-links{
+
+margin-top:15px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.nav-links li{
+
+margin:10px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.stats,
+.environment,
+.projects,
+.skills{
+
+grid-template-columns:1fr;
+
+}
+
+.pipeline-flow{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.pipeline-arrow{
+
+transform:rotate(90deg);
+
+}
+
+.buttons{
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+}
+
+
+@media screen and (max-width:500px){
+
+.hero{
+
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.section-title{
+
+font-size:32px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+footer{
+
+padding:35px 20px;
+
+}
+
+}}
 
 /* =====================================
    STATUS CARDS
@@ -651,3 +885,122 @@ table{
 
 }
 
+
+/* ==========================
+      RESPONSIVE DESIGN
+========================== */
+
+@media screen and (max-width:1200px){
+
+.stats,
+.environment,
+.projects,
+.skills{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media screen and (max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+padding:15px;
+
+}
+
+.nav-links{
+
+margin-top:15px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.nav-links li{
+
+margin:10px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.stats,
+.environment,
+.projects,
+.skills{
+
+grid-template-columns:1fr;
+
+}
+
+.pipeline-flow{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.pipeline-arrow{
+
+transform:rotate(90deg);
+
+}
+
+.buttons{
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+}
+
+
+@media screen and (max-width:500px){
+
+.hero{
+
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.section-title{
+
+font-size:32px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+footer{
+
+padding:35px 20px;
+
+}
+
+}
