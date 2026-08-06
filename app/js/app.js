@@ -58,3 +58,105 @@ updateStatus();
 window.addEventListener("online",updateStatus);
 
 window.addEventListener("offline",updateStatus);
+
+
+// ================= BACKEND API =================
+
+async function loadBackendData() {
+
+    try {
+
+        const response = await fetch("http://localhost:5000/api/system");
+
+        const data = await response.json();
+
+        console.log(data);
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+    }
+
+}
+
+loadBackendData();
+
+
+async function loadLiveData() {
+
+    try {
+
+        const response = await fetch("http://localhost:5000/api/live");
+
+        const data = await response.json();
+
+        document.getElementById("status").innerHTML = "🟢 Backend Connected";
+
+        document.getElementById("time").innerHTML =
+            data.current_time;
+
+        document.getElementById("os").innerHTML =
+            data.operating_system;
+
+    }
+
+    catch (error) {
+
+        document.getElementById("status").innerHTML =
+            "🔴 Backend Offline";
+
+        console.log(error);
+
+    }
+
+}
+
+loadLiveData();
+
+setInterval(loadLiveData,5000);
+
+
+async function loadJenkinsData() {
+
+    try {
+
+        const response = await fetch("http://localhost:5000/api/jenkins");
+
+        const data = await response.json();
+
+        document.getElementById("buildNumber").innerHTML =
+            "#" + data.build_number;
+
+        document.getElementById("jenkinsBuild").innerHTML =
+           "#" + data.build_number;
+
+        document.getElementById("jenkinsStatus").innerHTML =
+            data.status;
+
+        document.getElementById("jenkinsDuration").innerHTML =
+            data.duration + " sec";
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+    }
+
+}
+
+loadJenkinsData();
+
+setInterval(loadJenkinsData,5000);
+
+// ================= THEME =================
+
+function changeThemeMode() {
+
+    document.body.classList.toggle("dark");
+
+}

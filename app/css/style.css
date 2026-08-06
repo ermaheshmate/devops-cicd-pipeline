@@ -1081,3 +1081,19 @@ button:hover{
     }
 
 }
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .card{
+    background:#222;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p{
+    color:white;
+}
