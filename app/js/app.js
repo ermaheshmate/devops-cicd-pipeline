@@ -66,7 +66,7 @@ async function loadBackendData() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/system");
+        const response = await fetch("/api/system");
 
         const data = await response.json();
 
@@ -89,7 +89,7 @@ async function loadLiveData() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/live");
+        const response = await fetch("/api/live");
 
         const data = await response.json();
 
@@ -123,7 +123,7 @@ async function loadJenkinsData() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/jenkins");
+        const response = await fetch("/api/jenkins");
 
         const data = await response.json();
 
@@ -159,7 +159,7 @@ async function loadGithubData() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/github");
+        const response = await fetch("/api/github");
 
         const data = await response.json();
 
