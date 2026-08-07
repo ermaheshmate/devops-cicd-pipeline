@@ -153,6 +153,48 @@ loadJenkinsData();
 
 setInterval(loadJenkinsData,5000);
 
+// ================= GITHUB =================
+
+async function loadGithubData() {
+
+    try {
+
+        const response = await fetch("http://localhost:5000/api/github");
+
+        const data = await response.json();
+
+        document.getElementById("githubName").innerHTML =
+            data.name;
+
+        document.getElementById("githubOwner").innerHTML =
+            data.owner;
+
+        document.getElementById("githubBranch").innerHTML =
+            data.branch;
+
+        document.getElementById("githubStars").innerHTML =
+            data.stars;
+
+        document.getElementById("githubForks").innerHTML =
+            data.forks;
+
+        document.getElementById("githubLastPush").innerHTML =
+            new Date(data.last_push).toLocaleString();
+
+    }
+
+    catch(error) {
+
+        console.log("GitHub API Error:", error);
+
+    }
+
+}
+
+loadGithubData();
+
+setInterval(loadGithubData, 30000);
+
 // ================= THEME =================
 
 function changeThemeMode() {
